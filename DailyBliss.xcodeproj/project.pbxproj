@@ -11,6 +11,9 @@
 		7608F6D72CE5A29A0002DC5E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7608F6D62CE5A29A0002DC5E /* ContentView.swift */; };
 		7608F6D92CE5A29D0002DC5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7608F6D82CE5A29D0002DC5E /* Assets.xcassets */; };
 		7608F6DC2CE5A29D0002DC5E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7608F6DB2CE5A29D0002DC5E /* Preview Assets.xcassets */; };
+		7608F6E82CE5B02C0002DC5E /* notificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7608F6E72CE5B02C0002DC5E /* notificationView.swift */; };
+		7608F6EA2CE5B66A0002DC5E /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 7608F6E92CE5B66A0002DC5E /* InfoPlist.xcstrings */; };
+		7608F6EC2CE5B6820002DC5E /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 7608F6EB2CE5B6820002DC5E /* Localizable.xcstrings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		7608F6D62CE5A29A0002DC5E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7608F6D82CE5A29D0002DC5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7608F6DB2CE5A29D0002DC5E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7608F6E72CE5B02C0002DC5E /* notificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notificationView.swift; sourceTree = "<group>"; };
+		7608F6E92CE5B66A0002DC5E /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
+		7608F6EB2CE5B6820002DC5E /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +41,8 @@
 		7608F6C82CE5A29A0002DC5E = {
 			isa = PBXGroup;
 			children = (
+				7608F6E92CE5B66A0002DC5E /* InfoPlist.xcstrings */,
+				7608F6EB2CE5B6820002DC5E /* Localizable.xcstrings */,
 				7608F6D32CE5A29A0002DC5E /* DailyBliss */,
 				7608F6D22CE5A29A0002DC5E /* Products */,
 			);
@@ -53,6 +61,7 @@
 			children = (
 				7608F6D42CE5A29A0002DC5E /* DailyBlissApp.swift */,
 				7608F6D62CE5A29A0002DC5E /* ContentView.swift */,
+				7608F6E72CE5B02C0002DC5E /* notificationView.swift */,
 				7608F6D82CE5A29D0002DC5E /* Assets.xcassets */,
 				7608F6DA2CE5A29D0002DC5E /* Preview Content */,
 			);
@@ -109,6 +118,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 7608F6C82CE5A29A0002DC5E;
 			productRefGroup = 7608F6D22CE5A29A0002DC5E /* Products */;
@@ -125,7 +135,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7608F6EA2CE5B66A0002DC5E /* InfoPlist.xcstrings in Resources */,
 				7608F6DC2CE5A29D0002DC5E /* Preview Assets.xcassets in Resources */,
+				7608F6EC2CE5B6820002DC5E /* Localizable.xcstrings in Resources */,
 				7608F6D92CE5A29D0002DC5E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,6 +151,7 @@
 			files = (
 				7608F6D72CE5A29A0002DC5E /* ContentView.swift in Sources */,
 				7608F6D52CE5A29A0002DC5E /* DailyBlissApp.swift in Sources */,
+				7608F6E82CE5B02C0002DC5E /* notificationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,11 +288,13 @@
 				DEVELOPMENT_TEAM = F7TRH9293R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DailyBliss/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,11 +319,13 @@
 				DEVELOPMENT_TEAM = F7TRH9293R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DailyBliss/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

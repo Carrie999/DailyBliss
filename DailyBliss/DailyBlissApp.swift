@@ -12,6 +12,7 @@ struct DailyBlissApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+              
         }
     }
 }
